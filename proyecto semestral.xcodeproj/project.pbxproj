@@ -15,6 +15,8 @@
 		3D4976AF256C678700BED9BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4976AD256C678700BED9BA /* LaunchScreen.storyboard */; };
 		3D4976BA256C678800BED9BA /* proyecto_semestralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976B9256C678800BED9BA /* proyecto_semestralTests.swift */; };
 		3D4976C5256C678800BED9BA /* proyecto_semestralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976C4256C678800BED9BA /* proyecto_semestralUITests.swift */; };
+		3D4976D4256C683300BED9BA /* Musica.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976D3256C683300BED9BA /* Musica.swift */; };
+		3D4976D8256C68DC00BED9BA /* CeldaMusicaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976D7256C68DC00BED9BA /* CeldaMusicaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3D4976C0256C678800BED9BA /* proyecto semestralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "proyecto semestralUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4976C4256C678800BED9BA /* proyecto_semestralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proyecto_semestralUITests.swift; sourceTree = "<group>"; };
 		3D4976C6256C678800BED9BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4976D3256C683300BED9BA /* Musica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musica.swift; sourceTree = "<group>"; };
+		3D4976D7256C68DC00BED9BA /* CeldaMusicaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMusicaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +103,12 @@
 		3D4976A1256C678300BED9BA /* proyecto semestral */ = {
 			isa = PBXGroup;
 			children = (
+				3D4976D2256C680600BED9BA /* models */,
+				3D4976D5256C683F00BED9BA /* controllers */,
+				3D4976D6256C686500BED9BA /* storyboards */,
 				3D4976A2256C678300BED9BA /* AppDelegate.swift */,
 				3D4976A4256C678300BED9BA /* SceneDelegate.swift */,
-				3D4976A6256C678300BED9BA /* ViewController.swift */,
-				3D4976A8256C678300BED9BA /* Main.storyboard */,
 				3D4976AB256C678700BED9BA /* Assets.xcassets */,
-				3D4976AD256C678700BED9BA /* LaunchScreen.storyboard */,
 				3D4976B0256C678700BED9BA /* Info.plist */,
 			);
 			path = "proyecto semestral";
@@ -126,6 +130,32 @@
 				3D4976C6256C678800BED9BA /* Info.plist */,
 			);
 			path = "proyecto semestralUITests";
+			sourceTree = "<group>";
+		};
+		3D4976D2256C680600BED9BA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976D3256C683300BED9BA /* Musica.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		3D4976D5256C683F00BED9BA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976A6256C678300BED9BA /* ViewController.swift */,
+				3D4976D7256C68DC00BED9BA /* CeldaMusicaController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		3D4976D6256C686500BED9BA /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D4976A8256C678300BED9BA /* Main.storyboard */,
+				3D4976AD256C678700BED9BA /* LaunchScreen.storyboard */,
+			);
+			name = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4976A7256C678300BED9BA /* ViewController.swift in Sources */,
+				3D4976D4256C683300BED9BA /* Musica.swift in Sources */,
+				3D4976D8256C68DC00BED9BA /* CeldaMusicaController.swift in Sources */,
 				3D4976A3256C678300BED9BA /* AppDelegate.swift in Sources */,
 				3D4976A5256C678300BED9BA /* SceneDelegate.swift in Sources */,
 			);
