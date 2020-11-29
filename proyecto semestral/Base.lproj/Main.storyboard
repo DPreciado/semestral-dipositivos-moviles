@@ -98,6 +98,7 @@
                                             <outlet property="lblDuracion" destination="bB5-Tt-SBX" id="Mxc-th-uZc"/>
                                             <outlet property="lblTitulo" destination="GOg-yf-cvm" id="gyo-Iw-ggc"/>
                                             <outlet property="viewContenedorMusica" destination="Xi8-2W-xXT" id="Rhx-Ai-1Pb"/>
+                                            <segue destination="IfB-K4-cLb" kind="show" id="wLM-3R-bhX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -107,7 +108,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.29978927969932556" green="0.36835780739784241" blue="0.39774754643440247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lTW-z0-TJC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4vi-EJ-Py9"/>
                             <constraint firstItem="lTW-z0-TJC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MAP-95-X0I"/>
@@ -117,10 +118,120 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="6Zl-lm-0bX"/>
+                    <connections>
+                        <outlet property="tvPlaylists" destination="lTW-z0-TJC" id="mTN-v0-5aZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="364"/>
+            <point key="canvasLocation" x="263.768115942029" y="363.61607142857139"/>
+        </scene>
+        <!--Detalles Evento Controller-->
+        <scene sceneID="awC-tj-xwN">
+            <objects>
+                <viewController id="IfB-K4-cLb" customClass="DetallesEventoController" customModule="proyecto_semestral" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lQB-iC-iU8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx8-tm-mbP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zCs-xB-Hn9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="249"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1L-ph-y20">
+                                        <rect key="frame" x="8" y="257" width="63" height="22"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtR-3e-Uda">
+                                        <rect key="frame" x="8" y="284" width="53" height="19"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Re-Se-01P">
+                                        <rect key="frame" x="8" y="311" width="54" height="16"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUG-oB-0zI">
+                                        <rect key="frame" x="332" y="267" width="74" height="16"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reloj" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-hx-Jlp">
+                                        <rect key="frame" x="294" y="257" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="W1n-H8-YzO"/>
+                                            <constraint firstAttribute="width" constant="30" id="kjW-NN-10C"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-yN-3f2">
+                                        <rect key="frame" x="8" y="355" width="398" height="263"/>
+                                        <color key="backgroundColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="263" id="JHT-Vo-18a"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reproducciones" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeI-g7-GxN">
+                                        <rect key="frame" x="212" y="311" width="194" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1358436644077301" green="0.18033134937286377" blue="0.19301068782806396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lbh-hx-Jlp" firstAttribute="top" secondItem="G1L-ph-y20" secondAttribute="top" id="0eQ-UA-Jwm"/>
+                                    <constraint firstItem="qtR-3e-Uda" firstAttribute="top" secondItem="G1L-ph-y20" secondAttribute="bottom" constant="5" id="ISf-qS-OL2"/>
+                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="trailing" secondItem="QUG-oB-0zI" secondAttribute="trailing" id="R3C-gI-kzS"/>
+                                    <constraint firstItem="lbh-hx-Jlp" firstAttribute="top" secondItem="QUG-oB-0zI" secondAttribute="top" constant="-10" id="Z6H-sf-Inl"/>
+                                    <constraint firstItem="G1L-ph-y20" firstAttribute="top" secondItem="zCs-xB-Hn9" secondAttribute="bottom" constant="8" id="Z9j-4N-NDS"/>
+                                    <constraint firstItem="G1L-ph-y20" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="aSU-Vy-KeE"/>
+                                    <constraint firstItem="qtR-3e-Uda" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="aSr-gU-NmF"/>
+                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="top" secondItem="Tx8-tm-mbP" secondAttribute="top" constant="355" id="k98-Lh-G1r"/>
+                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="top" secondItem="9Re-Se-01P" secondAttribute="bottom" constant="28" id="ohy-Ey-KqH"/>
+                                    <constraint firstAttribute="trailing" secondItem="lbh-hx-Jlp" secondAttribute="trailing" constant="90" id="pCV-fM-4u4"/>
+                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="suT-fc-9bB"/>
+                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="leading" secondItem="9Re-Se-01P" secondAttribute="leading" id="uSs-Cb-phA"/>
+                                    <constraint firstItem="QUG-oB-0zI" firstAttribute="leading" secondItem="lbh-hx-Jlp" secondAttribute="trailing" constant="8" id="wng-X3-iqJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Tx8-tm-mbP" secondAttribute="bottom" constant="-34" id="4Y3-DE-C3r"/>
+                            <constraint firstItem="Tx8-tm-mbP" firstAttribute="top" secondItem="EV7-6j-ScN" secondAttribute="top" id="Qlc-MS-wGm"/>
+                            <constraint firstItem="Tx8-tm-mbP" firstAttribute="leading" secondItem="EV7-6j-ScN" secondAttribute="leading" id="ycW-MU-bHM"/>
+                            <constraint firstItem="Tx8-tm-mbP" firstAttribute="centerX" secondItem="lQB-iC-iU8" secondAttribute="centerX" id="zNV-dj-jSL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EV7-6j-ScN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xI8-9c-ccg"/>
+                    <connections>
+                        <outlet property="imagenFondo" destination="zCs-xB-Hn9" id="8ca-zP-vEA"/>
+                        <outlet property="lblAutor" destination="qtR-3e-Uda" id="EtN-5S-xh0"/>
+                        <outlet property="lblDuracion" destination="QUG-oB-0zI" id="dDO-re-V1A"/>
+                        <outlet property="lblEstado" destination="9Re-Se-01P" id="4cG-ij-u8c"/>
+                        <outlet property="lblReproducciones" destination="LeI-g7-GxN" id="U5i-Ec-wAs"/>
+                        <outlet property="lblTitulo" destination="G1L-ph-y20" id="uuv-QL-IBK"/>
+                        <outlet property="txtvDescripcion" destination="9p3-yN-3f2" id="JYC-z5-Ob5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wu-ub-8bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1337.68115942029" y="363.61607142857139"/>
         </scene>
         <!--Podcasts-->
         <scene sceneID="GrQ-LA-9QN">
@@ -208,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7np-Qz-VRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084" y="333"/>
+            <point key="canvasLocation" x="364" y="1433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BZt-Dv-kKx">
@@ -229,7 +340,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZO-yH-GUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="-113"/>
+            <point key="canvasLocation" x="-691" y="987"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tx9-Je-pNl">
