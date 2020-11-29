@@ -11,7 +11,6 @@ import UIKit
 
 class CeldaPodcastController : UITableViewCell {
     @IBOutlet weak var lblTitulo: UILabel!
-    
     @IBOutlet weak var lblGenero: UILabel!
     @IBOutlet weak var lblEpisodios: UILabel!
     @IBOutlet weak var CeldaPodcast: UIView!
