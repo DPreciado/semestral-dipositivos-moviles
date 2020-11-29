@@ -10,21 +10,16 @@ import Foundation
 
 class Musica{
     var titulo: String
-    var genero: String
-    var artista: String
-    var album: String
+    var autor: String
     var duracion: String
-    var imagen: String
+    var imagen : String
     
     
-    init(titulo:String, genero:String, artista:String, album:String, duracion:String, imagen:String){
+    init(titulo:String, autor:String, duracion:String, imagen:String){
         self.titulo = titulo
-        self.genero = genero
-        self.artista = artista
-        self.album = album
+        self.autor = autor
         self.duracion = duracion
         self.imagen = imagen
-        
     }
 }
 

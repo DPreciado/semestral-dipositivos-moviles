@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 class CeldaMusicaController: UITableViewCell{
-    @IBOutlet weak var imgCancion: UIImageView!
+    @IBOutlet weak var viewContenedorMusica: UIView!
+    @IBOutlet weak var imagenFondo: UIImageView!
+    @IBOutlet weak var lbAutor: UILabel!
     @IBOutlet weak var lblTitulo: UILabel!
-    @IBOutlet weak var lblArtista: UILabel!
     @IBOutlet weak var lblDuracion: UILabel!
     
 }
