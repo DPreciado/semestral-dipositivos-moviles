@@ -11,6 +11,8 @@
 		3D1B780825731CA6009E9F15 /* CeldaPodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B780725731CA6009E9F15 /* CeldaPodcastController.swift */; };
 		3D1B780A25734435009E9F15 /* DetallesEventoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B780925734435009E9F15 /* DetallesEventoController.swift */; };
 		3D1B780C2573C898009E9F15 /* ViewControllerPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B780B2573C898009E9F15 /* ViewControllerPodcast.swift */; };
+		3D1B780E257471EB009E9F15 /* DetallesPodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B780D257471EB009E9F15 /* DetallesPodcastController.swift */; };
+		3D1B78102574B307009E9F15 /* Neuton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D1B780F2574B307009E9F15 /* Neuton-Regular.ttf */; };
 		3D4976A3256C678300BED9BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976A2256C678300BED9BA /* AppDelegate.swift */; };
 		3D4976A5256C678300BED9BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976A4256C678300BED9BA /* SceneDelegate.swift */; };
 		3D4976A7256C678300BED9BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4976A6256C678300BED9BA /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		3D1B780725731CA6009E9F15 /* CeldaPodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPodcastController.swift; sourceTree = "<group>"; };
 		3D1B780925734435009E9F15 /* DetallesEventoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesEventoController.swift; sourceTree = "<group>"; };
 		3D1B780B2573C898009E9F15 /* ViewControllerPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPodcast.swift; sourceTree = "<group>"; };
+		3D1B780D257471EB009E9F15 /* DetallesPodcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPodcastController.swift; sourceTree = "<group>"; };
+		3D1B780F2574B307009E9F15 /* Neuton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neuton-Regular.ttf"; sourceTree = "<group>"; };
 		3D49769F256C678300BED9BA /* proyecto semestral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "proyecto semestral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4976A2256C678300BED9BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4976A4256C678300BED9BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		3D497696256C678300BED9BA = {
 			isa = PBXGroup;
 			children = (
+				3D1B780F2574B307009E9F15 /* Neuton-Regular.ttf */,
 				3D4976A1256C678300BED9BA /* proyecto semestral */,
 				3D4976B8256C678800BED9BA /* proyecto semestralTests */,
 				3D4976C3256C678800BED9BA /* proyecto semestralUITests */,
@@ -157,6 +162,7 @@
 				3D4976D7256C68DC00BED9BA /* CeldaMusicaController.swift */,
 				3D1B780725731CA6009E9F15 /* CeldaPodcastController.swift */,
 				3D1B780925734435009E9F15 /* DetallesEventoController.swift */,
+				3D1B780D257471EB009E9F15 /* DetallesPodcastController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			files = (
 				3D4976AF256C678700BED9BA /* LaunchScreen.storyboard in Resources */,
 				3D4976AC256C678700BED9BA /* Assets.xcassets in Resources */,
+				3D1B78102574B307009E9F15 /* Neuton-Regular.ttf in Resources */,
 				3D4976AA256C678300BED9BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +312,7 @@
 				3D1B780C2573C898009E9F15 /* ViewControllerPodcast.swift in Sources */,
 				3D4976D4256C683300BED9BA /* Musica.swift in Sources */,
 				3D1B78062573155F009E9F15 /* Podcast.swift in Sources */,
+				3D1B780E257471EB009E9F15 /* DetallesPodcastController.swift in Sources */,
 				3D4976D8256C68DC00BED9BA /* CeldaMusicaController.swift in Sources */,
 				3D1B780A25734435009E9F15 /* DetallesEventoController.swift in Sources */,
 				3D4976A3256C678300BED9BA /* AppDelegate.swift in Sources */,

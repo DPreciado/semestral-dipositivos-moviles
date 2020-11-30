@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Neuton-Regular.ttf">
+            <string>Neuton-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Playlists-->
         <scene sceneID="tne-QT-ifu">
@@ -40,15 +45,15 @@
                                                                 <constraint firstAttribute="height" constant="30" id="u1q-YA-zln"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-yf-cvm" userLabel="Lbl Titulo">
-                                                            <rect key="frame" x="8" y="10" width="63" height="22"/>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-yf-cvm" userLabel="Lbl Titulo">
+                                                            <rect key="frame" x="8" y="5" width="398" height="36"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB5-Tt-SBX">
-                                                            <rect key="frame" x="332.5" y="62" width="73.5" height="16"/>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                                            <rect key="frame" x="349.5" y="57.5" width="56.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -57,12 +62,12 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="143" id="DUa-bq-Pel"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reloj" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-uD-jUl">
-                                                            <rect key="frame" x="294.5" y="51" width="30" height="30"/>
+                                                            <rect key="frame" x="311.5" y="51" width="30" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="Fsr-dd-Vfg"/>
                                                                 <constraint firstAttribute="width" constant="30" id="fdN-Ak-ss4"/>
@@ -146,70 +151,75 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1L-ph-y20">
-                                        <rect key="frame" x="8" y="257" width="63" height="22"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                        <rect key="frame" x="8" y="257" width="51" height="28"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtR-3e-Uda">
-                                        <rect key="frame" x="8" y="284" width="53" height="19"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reproducciones" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeI-g7-GxN">
+                                        <rect key="frame" x="322.5" y="336" width="83.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Re-Se-01P">
-                                        <rect key="frame" x="8" y="311" width="54" height="16"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguidores" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6I-hS-MNO">
+                                        <rect key="frame" x="55" y="295" width="68.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duracion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUG-oB-0zI">
-                                        <rect key="frame" x="332" y="267" width="74" height="16"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reloj" translatesAutoresizingMaskIntoConstraints="NO" id="lbh-hx-Jlp">
-                                        <rect key="frame" x="294" y="257" width="30" height="30"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seguidores" translatesAutoresizingMaskIntoConstraints="NO" id="Hkw-4G-2Hm">
+                                        <rect key="frame" x="8" y="287" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="W1n-H8-YzO"/>
-                                            <constraint firstAttribute="width" constant="30" id="kjW-NN-10C"/>
+                                            <constraint firstAttribute="height" constant="30" id="55G-x2-qkw"/>
+                                            <constraint firstAttribute="width" secondItem="Hkw-4G-2Hm" secondAttribute="height" multiplier="1:1" id="q3c-hI-3kp"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-yN-3f2">
-                                        <rect key="frame" x="8" y="355" width="398" height="263"/>
-                                        <color key="backgroundColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="263" id="JHT-Vo-18a"/>
-                                        </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estrellas" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ML-kD-1xD">
+                                        <rect key="frame" x="322" y="300" width="54" height="22"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reproducciones" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeI-g7-GxN">
-                                        <rect key="frame" x="212" y="311" width="194" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Estrellas" translatesAutoresizingMaskIntoConstraints="NO" id="Gel-Rc-qGP">
+                                        <rect key="frame" x="276" y="287" width="30" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odV-5Y-Pdq">
+                                        <rect key="frame" x="55" y="332" width="43" height="22"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxF-v7-Dng">
+                                        <rect key="frame" x="8" y="362" width="398" height="149"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GxF-v7-Dng" secondAttribute="height" multiplier="398:149" id="3X7-UG-pdW"/>
+                                        </constraints>
+                                        <string key="text">LabelLorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1358436644077301" green="0.18033134937286377" blue="0.19301068782806396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="lbh-hx-Jlp" firstAttribute="top" secondItem="G1L-ph-y20" secondAttribute="top" id="0eQ-UA-Jwm"/>
-                                    <constraint firstItem="qtR-3e-Uda" firstAttribute="top" secondItem="G1L-ph-y20" secondAttribute="bottom" constant="5" id="ISf-qS-OL2"/>
-                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="trailing" secondItem="QUG-oB-0zI" secondAttribute="trailing" id="R3C-gI-kzS"/>
-                                    <constraint firstItem="lbh-hx-Jlp" firstAttribute="top" secondItem="QUG-oB-0zI" secondAttribute="top" constant="-10" id="Z6H-sf-Inl"/>
+                                    <constraint firstItem="odV-5Y-Pdq" firstAttribute="top" secondItem="h6I-hS-MNO" secondAttribute="bottom" constant="15" id="7Zj-dh-Y2L"/>
+                                    <constraint firstItem="Gel-Rc-qGP" firstAttribute="top" secondItem="zCs-xB-Hn9" secondAttribute="bottom" constant="38" id="87Z-Hm-h4x"/>
+                                    <constraint firstItem="1ML-kD-1xD" firstAttribute="leading" secondItem="Gel-Rc-qGP" secondAttribute="trailing" constant="16" id="COT-CG-Asp"/>
+                                    <constraint firstAttribute="trailing" secondItem="1ML-kD-1xD" secondAttribute="trailing" constant="38" id="DqD-dG-D3l"/>
+                                    <constraint firstItem="GxF-v7-Dng" firstAttribute="leading" secondItem="Hkw-4G-2Hm" secondAttribute="leading" id="N7b-B2-bIm"/>
+                                    <constraint firstItem="h6I-hS-MNO" firstAttribute="leading" secondItem="Hkw-4G-2Hm" secondAttribute="trailing" constant="17" id="Ofi-BR-3tC"/>
+                                    <constraint firstItem="GxF-v7-Dng" firstAttribute="top" secondItem="odV-5Y-Pdq" secondAttribute="bottom" constant="8" id="VaR-yw-fUa"/>
                                     <constraint firstItem="G1L-ph-y20" firstAttribute="top" secondItem="zCs-xB-Hn9" secondAttribute="bottom" constant="8" id="Z9j-4N-NDS"/>
+                                    <constraint firstItem="Hkw-4G-2Hm" firstAttribute="top" secondItem="Gel-Rc-qGP" secondAttribute="top" id="aB7-8a-bGh"/>
                                     <constraint firstItem="G1L-ph-y20" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="aSU-Vy-KeE"/>
-                                    <constraint firstItem="qtR-3e-Uda" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="aSr-gU-NmF"/>
-                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="top" secondItem="Tx8-tm-mbP" secondAttribute="top" constant="355" id="k98-Lh-G1r"/>
-                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="top" secondItem="9Re-Se-01P" secondAttribute="bottom" constant="28" id="ohy-Ey-KqH"/>
-                                    <constraint firstAttribute="trailing" secondItem="lbh-hx-Jlp" secondAttribute="trailing" constant="90" id="pCV-fM-4u4"/>
-                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="8" id="suT-fc-9bB"/>
-                                    <constraint firstItem="9p3-yN-3f2" firstAttribute="leading" secondItem="9Re-Se-01P" secondAttribute="leading" id="uSs-Cb-phA"/>
-                                    <constraint firstItem="QUG-oB-0zI" firstAttribute="leading" secondItem="lbh-hx-Jlp" secondAttribute="trailing" constant="8" id="wng-X3-iqJ"/>
+                                    <constraint firstItem="Hkw-4G-2Hm" firstAttribute="bottom" secondItem="h6I-hS-MNO" secondAttribute="bottom" id="b6u-9X-1fJ"/>
+                                    <constraint firstItem="odV-5Y-Pdq" firstAttribute="leading" secondItem="Tx8-tm-mbP" secondAttribute="leading" constant="55" id="jg5-f9-9sb"/>
+                                    <constraint firstAttribute="trailing" secondItem="LeI-g7-GxN" secondAttribute="trailing" constant="8" id="o5g-mG-ZDi"/>
+                                    <constraint firstItem="1ML-kD-1xD" firstAttribute="top" secondItem="zCs-xB-Hn9" secondAttribute="bottom" constant="51" id="qsr-dl-tia"/>
+                                    <constraint firstItem="LeI-g7-GxN" firstAttribute="top" secondItem="1ML-kD-1xD" secondAttribute="bottom" constant="14" id="rxk-1a-cVw"/>
+                                    <constraint firstItem="Hkw-4G-2Hm" firstAttribute="leading" secondItem="G1L-ph-y20" secondAttribute="leading" id="soN-0c-Rkn"/>
+                                    <constraint firstItem="GxF-v7-Dng" firstAttribute="trailing" secondItem="LeI-g7-GxN" secondAttribute="trailing" id="vSl-P4-IuG"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -225,12 +235,12 @@
                     <navigationItem key="navigationItem" id="xI8-9c-ccg"/>
                     <connections>
                         <outlet property="imagenFondo" destination="zCs-xB-Hn9" id="8ca-zP-vEA"/>
-                        <outlet property="lblAutor" destination="qtR-3e-Uda" id="EtN-5S-xh0"/>
-                        <outlet property="lblDuracion" destination="QUG-oB-0zI" id="dDO-re-V1A"/>
-                        <outlet property="lblEstado" destination="9Re-Se-01P" id="4cG-ij-u8c"/>
+                        <outlet property="lblEstado" destination="odV-5Y-Pdq" id="fA6-Ly-QjS"/>
+                        <outlet property="lblEstrellas" destination="1ML-kD-1xD" id="CcA-C4-YZz"/>
                         <outlet property="lblReproducciones" destination="LeI-g7-GxN" id="U5i-Ec-wAs"/>
+                        <outlet property="lblSeguidores" destination="h6I-hS-MNO" id="oAB-Zu-4Kz"/>
                         <outlet property="lblTitulo" destination="G1L-ph-y20" id="uuv-QL-IBK"/>
-                        <outlet property="txtvDescripcion" destination="9p3-yN-3f2" id="JYC-z5-Ob5"/>
+                        <outlet property="txtDescripcion" destination="GxF-v7-Dng" id="Qon-TI-NfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Wu-ub-8bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,35 +270,55 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-Nt-TC4">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-Nt-TC4">
                                                     <rect key="frame" x="0.0" y="94" width="414" height="90"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Wh-8Dc">
-                                                            <rect key="frame" x="8" y="8" width="63" height="22"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGt-Wh-8Dc">
+                                                            <rect key="frame" x="8" y="8" width="51" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" fixedFrame="YES" text="Genero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUS-Yl-Eho">
-                                                            <rect key="frame" x="16" y="51" width="64" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Genero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUS-Yl-Eho">
+                                                            <rect key="frame" x="56" y="46" width="46.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Episodios" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-h4-YHP">
-                                                            <rect key="frame" x="315" y="51" width="83" height="17"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episodios" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-h4-YHP">
+                                                            <rect key="frame" x="308.5" y="46" width="61.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Episodios" translatesAutoresizingMaskIntoConstraints="NO" id="l1J-c5-xvQ">
+                                                            <rect key="frame" x="267.5" y="40" width="30" height="30"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Genero" translatesAutoresizingMaskIntoConstraints="NO" id="ZZo-N8-hTM">
+                                                            <rect key="frame" x="8" y="41" width="30" height="30"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.18024811980140545" green="0.13306622650266059" blue="0.28238341969948189" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="z6L-h4-YHP" firstAttribute="leading" secondItem="l1J-c5-xvQ" secondAttribute="trailing" constant="11" id="6D4-IU-aI2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="OUS-Yl-Eho" secondAttribute="bottom" constant="22" id="6uZ-lz-XvB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ZZo-N8-hTM" secondAttribute="bottom" constant="19" id="Abn-9a-1Ws"/>
+                                                        <constraint firstAttribute="width" secondItem="ggc-Nt-TC4" secondAttribute="height" multiplier="23:5" id="DDU-Tz-2Ut"/>
+                                                        <constraint firstItem="OUS-Yl-Eho" firstAttribute="leading" secondItem="ZZo-N8-hTM" secondAttribute="trailing" constant="18" id="Eir-K2-piE"/>
+                                                        <constraint firstItem="ZZo-N8-hTM" firstAttribute="leading" secondItem="ggc-Nt-TC4" secondAttribute="leading" constant="8" id="Ezp-rT-Vsa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="l1J-c5-xvQ" secondAttribute="bottom" constant="20" id="HZU-L8-6Ia"/>
+                                                        <constraint firstItem="IGt-Wh-8Dc" firstAttribute="top" secondItem="ggc-Nt-TC4" secondAttribute="top" constant="8" id="ODM-Zw-qCq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z6L-h4-YHP" secondAttribute="trailing" constant="44" id="S0b-Bk-pUN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="z6L-h4-YHP" secondAttribute="bottom" constant="22" id="iVS-Xe-WYJ"/>
+                                                        <constraint firstItem="IGt-Wh-8Dc" firstAttribute="leading" secondItem="ggc-Nt-TC4" secondAttribute="leading" constant="8" id="rlJ-0z-pfF"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ggc-Nt-TC4" firstAttribute="bottom" secondItem="KyN-eH-uee" secondAttribute="bottom" id="HDA-4b-03H"/>
+                                                <constraint firstItem="ggc-Nt-TC4" firstAttribute="leading" secondItem="RZy-oq-cti" secondAttribute="leading" id="Uty-gJ-hcX"/>
+                                                <constraint firstAttribute="trailing" secondItem="ggc-Nt-TC4" secondAttribute="trailing" id="bCV-ZA-Rm8"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.13723966523684233" green="0.14143444002661704" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -297,6 +327,7 @@
                                             <outlet property="lblEpisodios" destination="z6L-h4-YHP" id="Aiq-Bf-gMi"/>
                                             <outlet property="lblGenero" destination="OUS-Yl-Eho" id="93P-7g-CvN"/>
                                             <outlet property="lblTitulo" destination="IGt-Wh-8Dc" id="DCz-P2-rVq"/>
+                                            <segue destination="00g-YC-jcS" kind="show" id="Gbj-x8-Oiz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -316,10 +347,135 @@
                         <viewLayoutGuide key="safeArea" id="WFc-t0-n0L"/>
                     </view>
                     <navigationItem key="navigationItem" title="Podcasts" id="Gy4-IT-jLP"/>
+                    <connections>
+                        <outlet property="tvPodcasts" destination="JVC-hS-8hj" id="px8-Tv-Cfe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7np-Qz-VRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363.768115942029" y="1432.3660714285713"/>
+        </scene>
+        <!--Detalles Podcast Controller-->
+        <scene sceneID="lMm-86-P29">
+            <objects>
+                <viewController id="00g-YC-jcS" customClass="DetallesPodcastController" customModule="proyecto_semestral" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mn7-rg-EOM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6z-UQ-U6o">
+                                <rect key="frame" x="0.0" y="88" width="414" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="BHb-d3-DfK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reproducciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIF-1V-VHI">
+                                <rect key="frame" x="20" y="423" width="95.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="hF9-lF-FOp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="16"/>
+                                <color key="textColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L0x-d6-qZ5">
+                                <rect key="frame" x="20" y="452" width="374" height="108"/>
+                                <color key="backgroundColor" red="0.90766014709999998" green="0.88136015329999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L0x-d6-qZ5" secondAttribute="height" multiplier="187:54" id="s2C-aY-K73"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </string>
+                                <color key="textColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-AP-bSy">
+                                <rect key="frame" x="0.0" y="264" width="414" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estrellas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt4-j1-dgG">
+                                        <rect key="frame" x="39" y="62.5" width="54" height="22"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="17"/>
+                                        <color key="textColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seguidores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh6-qa-Ccb">
+                                        <rect key="frame" x="39" y="103.5" width="64.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="16"/>
+                                        <color key="textColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4H-mc-SBY">
+                                        <rect key="frame" x="39" y="24" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="16"/>
+                                        <color key="textColor" red="0.13584366440000001" green="0.18033134940000001" blue="0.1930106878" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seguidores" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-ED-eOn">
+                                        <rect key="frame" x="1" y="80" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cwa-EC-F04"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Estrellas" translatesAutoresizingMaskIntoConstraints="NO" id="CEM-dU-c1p">
+                                        <rect key="frame" x="1" y="46" width="30" height="30"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Perfil" translatesAutoresizingMaskIntoConstraints="NO" id="msp-Ov-Oox">
+                                        <rect key="frame" x="1" y="8" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="msp-Ov-Oox" secondAttribute="height" multiplier="1:1" id="DfA-Y1-rKs"/>
+                                            <constraint firstAttribute="height" constant="30" id="kcO-nQ-mxs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.63417384308814573" green="0.61833696715181652" blue="0.71319796954314718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Zt4-j1-dgG" firstAttribute="leading" secondItem="CEM-dU-c1p" secondAttribute="trailing" constant="8" id="547-eI-XfR"/>
+                                    <constraint firstItem="msp-Ov-Oox" firstAttribute="trailing" secondItem="45Y-ED-eOn" secondAttribute="trailing" id="66q-uQ-RnQ"/>
+                                    <constraint firstItem="Kh6-qa-Ccb" firstAttribute="leading" secondItem="45Y-ED-eOn" secondAttribute="trailing" constant="8" id="CSG-Fo-jbT"/>
+                                    <constraint firstItem="msp-Ov-Oox" firstAttribute="leading" secondItem="CEM-dU-c1p" secondAttribute="leading" id="CpX-Tw-eza"/>
+                                    <constraint firstItem="msp-Ov-Oox" firstAttribute="leading" secondItem="Tcd-AP-bSy" secondAttribute="leading" constant="1" id="JRx-IU-nGG"/>
+                                    <constraint firstItem="Zt4-j1-dgG" firstAttribute="top" secondItem="a4H-mc-SBY" secondAttribute="bottom" constant="18" id="Kfc-SB-DFS"/>
+                                    <constraint firstItem="Kh6-qa-Ccb" firstAttribute="top" secondItem="Zt4-j1-dgG" secondAttribute="bottom" constant="19" id="n6D-pw-V8e"/>
+                                    <constraint firstItem="a4H-mc-SBY" firstAttribute="top" secondItem="Tcd-AP-bSy" secondAttribute="top" constant="24" id="nML-mL-d7f"/>
+                                    <constraint firstItem="msp-Ov-Oox" firstAttribute="top" secondItem="Tcd-AP-bSy" secondAttribute="topMargin" id="nlq-A6-w95"/>
+                                    <constraint firstItem="45Y-ED-eOn" firstAttribute="top" secondItem="CEM-dU-c1p" secondAttribute="bottom" constant="4" id="pmd-iv-RPw"/>
+                                    <constraint firstItem="CEM-dU-c1p" firstAttribute="top" secondItem="msp-Ov-Oox" secondAttribute="bottom" constant="8" id="sa3-dJ-7tE"/>
+                                    <constraint firstItem="msp-Ov-Oox" firstAttribute="leading" secondItem="45Y-ED-eOn" secondAttribute="leading" id="vvm-1I-hnL"/>
+                                    <constraint firstItem="a4H-mc-SBY" firstAttribute="leading" secondItem="msp-Ov-Oox" secondAttribute="trailing" constant="8" id="yrj-XO-iwW"/>
+                                    <constraint firstItem="a4H-mc-SBY" firstAttribute="leading" secondItem="msp-Ov-Oox" secondAttribute="trailing" constant="8" id="yt9-ZD-nDM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9076601470573169" green="0.88136015330783457" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z6z-UQ-U6o" firstAttribute="top" secondItem="Nu5-Tg-hFG" secondAttribute="top" id="2kf-9b-U0j"/>
+                            <constraint firstItem="SIF-1V-VHI" firstAttribute="top" secondItem="Tcd-AP-bSy" secondAttribute="bottom" constant="31" id="7xa-rT-Iyn"/>
+                            <constraint firstItem="Tcd-AP-bSy" firstAttribute="top" secondItem="z6z-UQ-U6o" secondAttribute="bottom" constant="1" id="MSb-en-si4"/>
+                            <constraint firstItem="Tcd-AP-bSy" firstAttribute="leading" secondItem="Nu5-Tg-hFG" secondAttribute="leading" id="QUo-Wl-6eR"/>
+                            <constraint firstItem="SIF-1V-VHI" firstAttribute="leading" secondItem="Nu5-Tg-hFG" secondAttribute="leading" constant="20" id="SEi-br-3jq"/>
+                            <constraint firstItem="L0x-d6-qZ5" firstAttribute="centerX" secondItem="Tcd-AP-bSy" secondAttribute="centerX" id="VGA-Bq-i65"/>
+                            <constraint firstItem="z6z-UQ-U6o" firstAttribute="leading" secondItem="Tcd-AP-bSy" secondAttribute="leading" id="Zcv-jf-c7B"/>
+                            <constraint firstItem="SIF-1V-VHI" firstAttribute="top" secondItem="Mn7-rg-EOM" secondAttribute="top" constant="423" id="fQh-du-yEg"/>
+                            <constraint firstItem="z6z-UQ-U6o" firstAttribute="trailing" secondItem="Tcd-AP-bSy" secondAttribute="trailing" id="hhQ-BC-iCs"/>
+                            <constraint firstItem="Tcd-AP-bSy" firstAttribute="trailing" secondItem="Nu5-Tg-hFG" secondAttribute="trailing" id="ibq-fz-fVL"/>
+                            <constraint firstItem="L0x-d6-qZ5" firstAttribute="leading" secondItem="Nu5-Tg-hFG" secondAttribute="leading" constant="20" id="yz6-KZ-nSb"/>
+                            <constraint firstItem="L0x-d6-qZ5" firstAttribute="top" secondItem="SIF-1V-VHI" secondAttribute="bottom" constant="12" id="zVs-3N-ggN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nu5-Tg-hFG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wMb-k7-42b"/>
+                    <connections>
+                        <outlet property="imgFondoPodcast" destination="z6z-UQ-U6o" id="LqZ-oF-yRg"/>
+                        <outlet property="lblAutores" destination="a4H-mc-SBY" id="9wn-m3-sAU"/>
+                        <outlet property="lblEstrellas" destination="Zt4-j1-dgG" id="xra-Ed-PMQ"/>
+                        <outlet property="lblReproducciones" destination="SIF-1V-VHI" id="zbP-3l-kZz"/>
+                        <outlet property="lblSeguidores" destination="Kh6-qa-Ccb" id="OEl-nS-LCH"/>
+                        <outlet property="txtDescripcion" destination="L0x-d6-qZ5" id="XkA-El-Vgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwr-Gy-aTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="1419.6428571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BR2-e8-Vtp">
@@ -328,7 +484,12 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2MA-Hc-QhP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="i3h-9S-848" kind="relationship" relationship="viewControllers" id="Xgu-1b-QV8"/>
@@ -339,12 +500,11 @@
             </objects>
             <point key="canvasLocation" x="-2131" y="398"/>
         </scene>
-        <!--Item-->
+        <!--Podcasts-->
         <scene sceneID="BZt-Dv-kKx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hZO-yH-GUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="a3Z-kO-nWj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iDZ-Jz-RJA"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="Podcast2" id="iDZ-Jz-RJA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iqF-L1-1Ix">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -358,14 +518,15 @@
                         <segue destination="ZaT-Pl-S5O" kind="relationship" relationship="rootViewController" id="A08-J6-Ehd"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZO-yH-GUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-691" y="987"/>
         </scene>
-        <!--Item-->
+        <!--Playlists-->
         <scene sceneID="Tx9-Je-pNl">
             <objects>
                 <navigationController id="i3h-9S-848" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="mLa-hK-9Bt"/>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="Playlist2" id="mLa-hK-9Bt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R8U-9i-ZU5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -385,8 +546,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Episodios" width="30" height="30"/>
+        <image name="Estrellas" width="30" height="30"/>
+        <image name="Genero" width="30" height="30"/>
         <image name="Perfil" width="50" height="50"/>
+        <image name="Playlist2" width="30" height="30"/>
+        <image name="Podcast2" width="30" height="30"/>
         <image name="Reloj" width="50" height="50"/>
+        <image name="Seguidores" width="50" height="50"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

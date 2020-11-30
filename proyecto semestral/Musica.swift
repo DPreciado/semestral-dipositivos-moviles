@@ -13,18 +13,22 @@ class Musica{
     var autor: String
     var duracion: String
     var imagen : String
-    var estado : String
+    var estrellas : String
+    var seguidores : String
     var reproducciones : String
     var descripcion : String
+    var estado : String
     
-    init(titulo:String, autor:String, duracion:String, imagen:String, estado:String, reproducciones: String, descripcion: String){
+    init(titulo:String, autor:String, duracion:String, imagen:String, estrellas:String, seguidores:String, reproducciones: String, descripcion: String, estado: String){
         self.titulo = titulo
         self.autor = autor
         self.duracion = duracion
         self.imagen = imagen
-        self.estado = estado
+        self.estrellas = estrellas
+        self.seguidores = seguidores
         self.reproducciones = reproducciones
         self.descripcion = descripcion
+        self.estado = estado
     }
 }
 
